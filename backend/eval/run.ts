@@ -6,8 +6,8 @@ import { EVAL_CASES } from './cases.ts';
 import { runCase, checkResponseQuality } from './runner.ts';
 import type { EvalResult, EvalSummary, DimensionScores } from './types.ts';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const RESULTS_DIR = path.join(__dirname, 'results');
+const evalModuleDir = path.dirname(fileURLToPath(import.meta.url));
+const RESULTS_DIR = path.join(evalModuleDir, 'results');
 
 // ── ANSI 颜色 ────────────────────────────────────────────────────
 const c = {

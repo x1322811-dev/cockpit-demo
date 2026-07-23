@@ -3,8 +3,8 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import type { Scene } from '../../shared/types.ts';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const STORAGE_PATH = join(__dirname, 'scenes.json');
+const storageModuleDir = dirname(fileURLToPath(import.meta.url));
+const STORAGE_PATH = join(storageModuleDir, 'scenes.json');
 
 function load(): Scene[] {
   if (!existsSync(STORAGE_PATH)) return [];

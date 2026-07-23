@@ -9,9 +9,9 @@ type CreateAppOptions = {
   staticRoot?: string;
 };
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const defaultStaticRoot = path.resolve(__dirname, '../frontend/dist');
+const appModuleFilename = fileURLToPath(import.meta.url);
+const appModuleDir = path.dirname(appModuleFilename);
+const defaultStaticRoot = path.resolve(appModuleDir, '../frontend/dist');
 
 function getAllowedOrigins(): Array<string | RegExp> {
   const configured = process.env.ALLOWED_ORIGINS

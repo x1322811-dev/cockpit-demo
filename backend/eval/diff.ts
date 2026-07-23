@@ -3,8 +3,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import type { EvalSummary, EvalResult } from './types.ts';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const RESULTS_DIR = path.join(__dirname, 'results');
+const evalModuleDir = path.dirname(fileURLToPath(import.meta.url));
+const RESULTS_DIR = path.join(evalModuleDir, 'results');
 
 const c = {
   reset: '\x1b[0m', bold: '\x1b[1m',
