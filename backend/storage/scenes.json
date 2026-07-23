@@ -1,0 +1,314 @@
+[
+  {
+    "id": "1781683987783",
+    "name": "带娃长途自驾",
+    "triggerPhrase": "带娃长途自驾",
+    "source": "user_defined",
+    "actions": [
+      {
+        "tool": "set_temperature",
+        "args": {
+          "zone": "all",
+          "value": 24
+        }
+      },
+      {
+        "tool": "set_fan_speed",
+        "args": {
+          "level": 2
+        }
+      },
+      {
+        "tool": "set_ambient_light",
+        "args": {
+          "color": "#87CEEB",
+          "brightness": 40,
+          "mode": "breathe"
+        }
+      },
+      {
+        "tool": "play_music",
+        "args": {
+          "query": "儿童歌曲"
+        }
+      },
+      {
+        "tool": "set_volume",
+        "args": {
+          "level": 40
+        }
+      },
+      {
+        "tool": "adjust_seat",
+        "args": {
+          "position": "normal",
+          "massage": true,
+          "heating": false
+        }
+      },
+      {
+        "tool": "set_reminder",
+        "args": {
+          "text": "检查后排儿童安全座椅",
+          "trigger": "出发时"
+        }
+      },
+      {
+        "tool": "set_reminder",
+        "args": {
+          "text": "提醒小朋友休息喝水",
+          "trigger": "每2小时"
+        }
+      }
+    ],
+    "createdAt": "2026-06-17T08:13:07.783Z"
+  },
+  {
+    "id": "1782381672513",
+    "name": "夜驾模式",
+    "triggerPhrase": "夜驾模式",
+    "source": "user_defined",
+    "actions": [
+      {
+        "tool": "set_ambient_light",
+        "args": {
+          "color": "#4A90D9",
+          "brightness": 20,
+          "mode": "breathe"
+        }
+      },
+      {
+        "tool": "set_volume",
+        "args": {
+          "level": 18
+        }
+      },
+      {
+        "tool": "set_air_circulation",
+        "args": {
+          "mode": "fresh"
+        }
+      },
+      {
+        "tool": "set_steering_heat",
+        "args": {
+          "on": true
+        }
+      }
+    ],
+    "createdAt": "2026-06-25T10:01:12.513Z"
+  },
+  {
+    "id": "1782381685901",
+    "name": "商务接待模式",
+    "triggerPhrase": "商务接待模式",
+    "source": "user_defined",
+    "actions": [
+      {
+        "tool": "set_temperature",
+        "args": {
+          "zone": "all",
+          "value": 23
+        }
+      },
+      {
+        "tool": "set_fan_speed",
+        "args": {
+          "zone": "front",
+          "level": 2
+        }
+      },
+      {
+        "tool": "set_ambient_light",
+        "args": {
+          "color": "#1A1A2E",
+          "brightness": 30,
+          "mode": "static"
+        }
+      },
+      {
+        "tool": "set_fragrance",
+        "args": {
+          "type": "ocean"
+        }
+      },
+      {
+        "tool": "play_music",
+        "args": {
+          "query": "古典"
+        }
+      },
+      {
+        "tool": "set_volume",
+        "args": {
+          "level": 25
+        }
+      },
+      {
+        "tool": "set_air_circulation",
+        "args": {
+          "mode": "fresh"
+        }
+      },
+      {
+        "tool": "set_air_purifier",
+        "args": {
+          "level": "low"
+        }
+      }
+    ],
+    "createdAt": "2026-06-25T10:01:25.901Z"
+  },
+  {
+    "id": "1782381717106",
+    "name": "睡眠模式",
+    "triggerPhrase": "睡眠模式",
+    "source": "user_defined",
+    "actions": [
+      {
+        "tool": "set_temperature",
+        "args": {
+          "zone": "front",
+          "value": 22
+        }
+      },
+      {
+        "tool": "set_temperature",
+        "args": {
+          "zone": "rear",
+          "value": 22
+        }
+      },
+      {
+        "tool": "set_fan_speed",
+        "args": {
+          "zone": "front",
+          "level": 2
+        }
+      },
+      {
+        "tool": "set_fan_speed",
+        "args": {
+          "zone": "rear",
+          "level": 2
+        }
+      },
+      {
+        "tool": "set_ac",
+        "args": {
+          "zone": "all",
+          "on": true
+        }
+      },
+      {
+        "tool": "set_air_circulation",
+        "args": {
+          "mode": "recirculate"
+        }
+      },
+      {
+        "tool": "set_airflow_mode",
+        "args": {
+          "zone": "front",
+          "mode": "face"
+        }
+      },
+      {
+        "tool": "set_airflow_mode",
+        "args": {
+          "zone": "rear",
+          "mode": "face"
+        }
+      },
+      {
+        "tool": "set_volume",
+        "args": {
+          "level": 30
+        }
+      },
+      {
+        "tool": "set_ambient_light",
+        "args": {
+          "color": "#4A90D9",
+          "brightness": 60,
+          "mode": "static"
+        }
+      },
+      {
+        "tool": "set_window",
+        "args": {
+          "position": "driver",
+          "value": 0
+        }
+      },
+      {
+        "tool": "set_window",
+        "args": {
+          "position": "passenger",
+          "value": 0
+        }
+      },
+      {
+        "tool": "set_window",
+        "args": {
+          "position": "rearLeft",
+          "value": 0
+        }
+      },
+      {
+        "tool": "set_window",
+        "args": {
+          "position": "rearRight",
+          "value": 0
+        }
+      },
+      {
+        "tool": "set_sunroof",
+        "args": {
+          "mode": "shade"
+        }
+      }
+    ],
+    "createdAt": "2026-06-25T10:01:57.106Z"
+  },
+  {
+    "id": "1782446130850",
+    "name": "上班",
+    "triggerPhrase": "我要上班去",
+    "source": "user_defined",
+    "actions": [
+      {
+        "tool": "set_navigation",
+        "args": {
+          "destination": "腾讯北京总部大楼"
+        }
+      },
+      {
+        "tool": "play_music",
+        "args": {
+          "query": "流行"
+        }
+      },
+      {
+        "tool": "set_volume",
+        "args": {
+          "level": 30
+        }
+      },
+      {
+        "tool": "set_temperature",
+        "args": {
+          "zone": "front",
+          "value": 24
+        }
+      },
+      {
+        "tool": "set_air_purifier",
+        "args": {
+          "level": "low"
+        }
+      }
+    ],
+    "createdAt": "2026-06-26T03:55:30.850Z"
+  }
+]

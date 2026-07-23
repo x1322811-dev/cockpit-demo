@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: cockpit-demo
+    runtime: node
+    plan: free
+    buildCommand: npm run install:all && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: DEEPSEEK_API_KEY
+        sync: false
