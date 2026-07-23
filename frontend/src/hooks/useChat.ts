@@ -97,7 +97,7 @@ export async function sendChatMessage(text: string, zone: 'driver' | 'passenger'
     s().addReasoningStep({ type: 'text', content: `✗ ${msg}` });
     s().addMessage({
       role: 'assistant',
-      content: `连接后端失败：${msg}。请确认后端已启动（cd backend && npm run dev）。`,
+      content: `连接 Agent 服务失败：${msg}。如果这是公网链接，请检查 Netlify 的 DEEPSEEK_API_KEY 环境变量和 Functions 日志。`,
       timestamp: new Date().toISOString(),
     });
   } finally {

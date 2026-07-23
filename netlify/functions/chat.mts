@@ -35,7 +35,8 @@ export default async function handler(request: Request): Promise<Response> {
 
   try {
     body = await request.json();
-  } catch {
+  } catch (err) {
+    console.error('Invalid /chat JSON body', err);
     return jsonResponse({ error: 'Invalid JSON body' }, 400);
   }
 
@@ -76,6 +77,10 @@ export default async function handler(request: Request): Promise<Response> {
 
       try {
         await runAgentLoop(message, emit, resolvedZone);
+      } catch (err) {
+        console.error('Unhandled Agent loop error', err);
+        emit({ type: 'error', message: err instanceof Error ? err.message : String(err) });
+        emit({ type: 'done' });
       } finally {
         controller.close();
       }
